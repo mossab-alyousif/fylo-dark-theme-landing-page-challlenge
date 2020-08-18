@@ -1,10 +1,11 @@
 /* eslint-disable react/react-in-jsx-scope */
 
-import HeroSection from '../public/sections/hero.section';
-import MainNav from '../public/components/mainNav';
+import HeroSection from '../sections/hero.section';
+import MainNav from '../components/mainNav';
 import GlobalStyles from '../styles/globalStyles';
-import FeaturesSection from '../public/sections/features.section';
-import ExtraDescriptionSection from '../public/sections/extraDescription.section';
+import FeaturesSection from '../sections/features.section';
+import ExtraDescriptionSection from '../sections/extraDescription.section';
+import TestimonialsSection from '../sections/testimonials.section';
 
 const Home: React.FunctionComponent = () => (
     <>
@@ -20,6 +21,7 @@ const Home: React.FunctionComponent = () => (
             <HeroSection />
             <FeaturesSection />
             <ExtraDescriptionSection />
+            <TestimonialsSection />
         </main>
     </>
 );
