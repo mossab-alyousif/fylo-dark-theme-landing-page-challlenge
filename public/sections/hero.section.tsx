@@ -3,14 +3,15 @@ import styled from 'styled-components';
 
 const StyeldHeroSection = styled.section`
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
+    margin: auto;
+    text-align: center;
     width: 100%;
     min-height: 100vh;
-    background: var(--intro-email-bg) url('../images/bg-curvy-desktop.svg') bottom no repeat;
+    background: var(--intro-email-bg) url('images/svg/bg-curvy-desktop.svg') bottom no-repeat;
     background-size: 100% 270px;
-    text-align: center;
 `;
 
 const HeroImg = styled.img`
@@ -41,10 +42,10 @@ const GetStartedLink = styled.a`
 `;
 
 const HeroSection = () => {
-    //{require('../images/illustration-intro.png')}
+    //{require('images/illustration-intro.png')}
     return (
         <StyeldHeroSection>
-            <HeroImg src="../images/illustration-intro.png" alt="illustration-intro" />
+            <HeroImg src="images/illustration-intro.png" alt="illustration-intro" />
 
             <FirstTitleHeading>
                 All your files in one secure location, accessible anywhere.
