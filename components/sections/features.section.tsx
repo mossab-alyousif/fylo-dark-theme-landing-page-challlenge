@@ -8,6 +8,12 @@ const StyeldFeaturesSection = styled.section`
     gap: 94px 150px;
     margin: 130px 0;
     padding: 0 280px;
+    @media (max-width: 375px) {
+        grid-template-columns: 1fr;
+        gap: 87px 0px;
+        padding: 0 38px;
+        margin: 100px 0;
+    }
 `;
 
 const FeatureImg = styled.img``;

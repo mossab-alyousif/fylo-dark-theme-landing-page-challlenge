@@ -6,6 +6,11 @@ const StyeldTestimonialsSection = styled.section`
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     padding: 140px;
+    @media (max-width: 375px) {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 150px 22px;
+    }
 `;
 
 const Testimonial = styled.div`
@@ -20,6 +25,9 @@ const Testimonial = styled.div`
         top: -35px;
         left: -15px;
         z-index: -1;
+        @media (max-width: 375px) {
+            left: 4px;
+        }
     }
 `;
 

@@ -11,6 +11,19 @@ const StyeldFooter = styled.section`
     grid-template-areas:
         'logo . . . .'
         'location  contact links more-links social-icons';
+    @media (max-width: 375px) {
+        grid-template-columns: 1fr;
+        padding: 280px 27px 42px 27px;
+        column-gap: 0;
+        row-gap: 20px;
+        grid-template-areas:
+            'logo'
+            'location'
+            'contact'
+            'links'
+            'more-links'
+            'social-icons';
+    }
 `;
 
 const Paragraph = styled.p``;
@@ -65,6 +78,20 @@ const SocialIconsContainer = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     > i {
         font-size: 30px;
+        @media (max-width: 375px) {
+            font-size: 28px;
+        }
+    }
+    @media (max-width: 375px) {
+        > .fa-facebook {
+            justify-self: end;
+        }
+        > .fa-facebook {
+            justify-self: center;
+        }
+        > .fa-facebook {
+            justify-self: start;
+        }
     }
 `;
 

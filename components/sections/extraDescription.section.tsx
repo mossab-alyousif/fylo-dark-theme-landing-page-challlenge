@@ -5,12 +5,20 @@ const StyeldExtraDescriptionSection = styled.section`
     display: flex;
     align-items: center;
     padding: 0 100px;
+    @media (max-width: 375px) {
+        flex-direction: column;
+        padding: 0 25px;
+    }
 `;
 
 const ExtraDesciptionImg = styled.img`
     height: 460px;
     width: auto;
     margin-right: 45px;
+    @media (max-width: 375px) {
+        height: 215px;
+        margin: 0px 0px 52px 0px;
+    }
 `;
 
 const TitleHeading = styled.h3`

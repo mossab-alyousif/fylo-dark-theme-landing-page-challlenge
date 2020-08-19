@@ -16,9 +16,19 @@ const StyledNav = styled.nav`
     justify-content: space-between;
     padding: 73px 80px;
     background: var(--intro-email-bg);
+    @media (max-width: 375px) {
+        padding: 24px 20px;
+    }
 `;
 
-const LogoLink = styled.a``;
+const LogoLink = styled.a`
+    > img {
+        @media (max-width: 375px) {
+            width: 82px;
+            height: 24px;
+        }
+    }
+`;
 
 const NavLink = styled.li``;
 
@@ -28,6 +38,9 @@ const NavItems = styled.ul`
 
     & ${NavLink}:not(:last-child) {
         padding-right: 56px;
+        @media (max-width: 375px) {
+            padding-right: 23px;
+        }
     }
 `;
 

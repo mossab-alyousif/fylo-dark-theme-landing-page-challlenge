@@ -17,17 +17,30 @@ const StyeldHeroSection = styled.section`
 const HeroImg = styled.img`
     width: 739px;
     height: 533px;
+    @media (max-width: 375px) {
+        width: 305px;
+        height: 225px;
+    }
 `;
 
 const FirstTitleHeading = styled.h2`
     width: 742px;
     margin: 46px;
+    @media (max-width: 375px) {
+        width: 302px;
+        margin: 23px;
+    }
 `;
 
 const HeroParagraph = styled.p`
     width: 742px;
     font-size: 22px;
     padding: 0 30px;
+    @media (max-width: 375px) {
+        width: 292px;
+        font-size: 12px;
+        padding: 0 23px;
+    }
 `;
 
 const GetStartedLink = styled.a`
@@ -39,6 +52,10 @@ const GetStartedLink = styled.a`
     margin: 30px 0;
     background: linear-gradient(to right, var(--cyan), var(--blue));
     border: none;
+    @media (max-width: 375px) {
+        width: 242px;
+        padding: 18px 0;
+    }
 `;
 
 const HeroSection = () => {

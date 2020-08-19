@@ -13,6 +13,10 @@ const StyeldSignupSection = styled.section`
     padding: 50px 74px 40px 74px;
     border-radius: 5px;
     bottom: -155px;
+    @media (max-width: 375px) {
+        padding: 40px 25px;
+        bottom: -175px;
+    }
 `;
 
 const Heading = styled.h2`
@@ -27,6 +31,9 @@ const Paragraph = styled.p`
 const Form = styled.form`
     display: flex;
     align-content: center;
+    @media (max-width: 375px) {
+        flex-direction: column;
+    }
 `;
 
 const EmailInput = styled.input.attrs({ type: 'email' })`
@@ -40,6 +47,10 @@ const EmailInput = styled.input.attrs({ type: 'email' })`
     &::placeholder {
         opacity: 0.4;
     }
+    @media (max-width: 375px) {
+        width: 280px;
+        margin: 0px 0px 25px 0px;
+    }
 `;
 
 const GetStartedSubmit = styled.input.attrs({ type: 'submit' })`
@@ -51,6 +62,10 @@ const GetStartedSubmit = styled.input.attrs({ type: 'submit' })`
     background: linear-gradient(to right, var(--cyan), var(--blue));
     border: none;
     margin: 0;
+    @media (max-width: 375px) {
+        width: 280px;
+        margin: 0px 0px 25px 0px;
+    }
 `;
 
 const SignupSection = () => {
