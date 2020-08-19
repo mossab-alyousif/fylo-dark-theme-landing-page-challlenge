@@ -53,6 +53,16 @@ main {
   position: relative;
   padding-bottom: 200px;
 }
+
+@media (max-width: 375px) {
+  html {
+    font-size: 10px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+  }
 `;
 
 export default GlobalStyles;
