@@ -1,6 +1,6 @@
 /* eslint-disable react/react-in-jsx-scope */
 import styled from 'styled-components';
-//import Logo from 'images/svg/Logo.svg';
+//import Logo from 'images/svg/logo.svg';
 
 type Props = {
     children: string;
@@ -45,11 +45,11 @@ const NavItems = styled.ul`
 `;
 
 const MainNav = () => {
-    //{require('images/svg/Logo.svg')}
+    //{require('images/svg/logo.svg')}
     return (
         <StyledNav>
             <LogoLink href="/">
-                <img src="images/svg/Logo.svg" alt="svg" />
+                <img src="images/svg/logo.svg" alt="svg" />
             </LogoLink>
             <NavItems>
                 <NavLink>
